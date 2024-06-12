@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktywności</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo" style="height: 40px;">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activities.html">Aktywności</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ranking.html">Ranking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="activities" class="mt-5">
+            <h2>Dostępne Aktywności</h2>
+            <div class="form-group">
+                <label for="sort">Sortuj według:</label>
+                <select id="sort" class="form-control">
+                    <option value="date">Data</option>
+                    <option value="points">Punkty</option>
+                    <option value="name">Nazwa</option>
+                </select>
+            </div>
+            <ul id="activity-list" class="list-group"></ul>
+        </section>
+    </div>
+
+</body></html>
